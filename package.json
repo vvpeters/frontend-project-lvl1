@@ -1,5 +1,5 @@
 {
-  "name": "@hexlet/code",
+  "name": "@vvpeters/brain-games",
   "version": "1.0.0",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/vvpeters/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "vvpeters",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vvpeters/frontend-project-lvl1/issues"
