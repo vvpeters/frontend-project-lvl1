@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import meet from './cli.js';
+import meet from '../cli.js';
 
 const isEven = (num) => num % 2 === 0;
 const getRandom = () => Math.floor(Math.random() * 100);
