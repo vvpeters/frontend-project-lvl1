@@ -7,7 +7,7 @@ const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 const round = () => {
   const random = getRandom(0, 100);
 
-  return [random.toString(), isEven(random)];
+  return [random, isEven(random)];
 };
 
 export default () => {

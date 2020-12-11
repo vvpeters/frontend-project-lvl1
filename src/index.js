@@ -1,12 +1,12 @@
 import readlineSync from 'readline-sync';
-import meet from './cli.js';
+import greeting from './cli.js';
 
 const ROUNDS = 3;
 
 export const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 export default (condition, round) => {
-  const name = meet();
+  const name = greeting();
   console.log(condition);
 
   let count = 0;
@@ -17,7 +17,7 @@ export default (condition, round) => {
 
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === correctAnswer) {
+    if (userAnswer === correctAnswer.toString()) {
       console.log('Correct!');
       count += 1;
     } else {

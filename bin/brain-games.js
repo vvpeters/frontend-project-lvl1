@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import meet from '../src/cli.js';
+import greeting from '../src/cli.js';
 
-meet();
+greeting();

@@ -25,7 +25,7 @@ const round = () => {
 
   const question = `${number1} ${operator} ${number2}`;
 
-  return [question, correctAnswer.toString()];
+  return [question, correctAnswer];
 };
 
 export default () => {
