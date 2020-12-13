@@ -3,22 +3,27 @@ import gameEngine, { getRandom } from '../index.js';
 const CONDITION = 'What number is missing in the progression?';
 
 const round = () => {
-  const start = getRandom(1, 20);
+  const startNumber = getRandom(1, 20);
   const step = getRandom(1, 10);
-  const length = getRandom(5, 10);
-  const questionPosition = getRandom(..., ...);
+  const progressionLength = getRandom(5, 10) - 1;
+  const questionIndex = getRandom(0, progressionLength);
+  const replacer = '..';
 
-  const getProgression = () => {
-    const progresion = [];
-    for (let i = 0, let progression[i] = start; i < length - 1; i += 1, progression[i] += step) {
-     progresion.push([i]);
+  const progression = [];
+  let correctAnswer;
+  let item = startNumber;
+  for (let position = 0; position <= progressionLength; position += 1, item += step) {
+    if (position === questionIndex) {
+      correctAnswer = item;
+      progression.push(replacer);
+    } else {
+      progression.push(item);
     }
-    return progression;
+  }
 
+  const question = progression.join(' ');
 
-  const question = `${number1} ${operator} ${number2}`;
-
-  return [question, correctAnswer.toString()];
+  return [question, correctAnswer];
 };
 
 export default () => {
