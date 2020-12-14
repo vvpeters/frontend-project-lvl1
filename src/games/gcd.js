@@ -9,7 +9,7 @@ const gcd = (num1, num2) => {
   if (num2 === 0) {
     return num1;
   }
-  return (num1 > num2) ? gcd(num2, num1 % num2) : gcd(num1, num2 % num1);
+  return num1 > num2 ? gcd(num2, num1 % num2) : gcd(num1, num2 % num1);
 };
 
 const round = () => {
