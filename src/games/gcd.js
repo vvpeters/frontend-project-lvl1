@@ -1,4 +1,4 @@
-import gameEngine, { getRandom } from '..';
+import gameEngine, { getRandom } from '../index.js';
 
 const CONDITION = 'Find the greatest common divisor of given numbers.';
 

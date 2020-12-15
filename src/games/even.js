@@ -1,4 +1,4 @@
-import gameEngine, { getRandom } from '..';
+import gameEngine, { getRandom } from '../index.js';
 
 const CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
