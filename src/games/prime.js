@@ -1,4 +1,4 @@
-import gameEngine, { getRandom } from '../index.js';
+import gameEngine, { getRandom } from '..';
 
 const CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

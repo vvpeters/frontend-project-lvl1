@@ -1,4 +1,4 @@
-import gameEngine, { getRandom } from '../index.js';
+import gameEngine, { getRandom } from '..';
 
 const CONDITION = 'What number is missing in the progression?';
 

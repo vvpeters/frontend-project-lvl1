@@ -1,4 +1,4 @@
-import gameEngine, { getRandom } from '../index.js';
+import gameEngine, { getRandom } from '..';
 
 const CONDITION = 'What is the result of the expression?';
 
