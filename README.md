@@ -12,7 +12,7 @@ A set of  mini-games for terminal. All games continue until you give the correct
 ***
 ## Usage
 ```
-$ brain-even <br>
+$ brain-even
 Answer "yes" if the number is even, otherwise answer "no".
 
 $ brain-calc
