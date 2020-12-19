@@ -17,7 +17,7 @@ const round = () => {
   const number2 = getRandom(0, 100);
   const question = `${number1} ${number2}`;
 
-  return [question, gcd(number1, number2)];
+  return [question, gcd(number1, number2).toString()];
 };
 
 export default () => {

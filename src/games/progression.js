@@ -23,7 +23,7 @@ const round = () => {
 
   const question = progression.join(' ');
 
-  return [question, correctAnswer];
+  return [question, correctAnswer.toString()];
 };
 
 export default () => {

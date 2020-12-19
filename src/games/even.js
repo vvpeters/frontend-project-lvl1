@@ -2,12 +2,13 @@ import gameEngine, { getRandom } from '../index.js';
 
 const CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = (num) => num % 2 === 0;
 
 const round = () => {
   const random = getRandom(0, 100);
+  const correctAnswer = isEven(random) === true ? 'yes' : 'no';
 
-  return [random, isEven(random)];
+  return [random, correctAnswer];
 };
 
 export default () => {
