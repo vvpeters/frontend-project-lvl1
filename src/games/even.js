@@ -6,7 +6,7 @@ const isEven = (num) => num % 2 === 0;
 
 const round = () => {
   const random = getRandom(0, 100);
-  const correctAnswer = isEven(random) === true ? 'yes' : 'no';
+  const correctAnswer = isEven(random) ? 'yes' : 'no';
 
   return [random, correctAnswer];
 };

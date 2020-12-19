@@ -7,17 +7,17 @@ const isPrime = (num) => {
 
   for (let i = 2; i <= max; i += 1) {
     if (num % i === 0) {
-      return 'no';
+      return false;
     }
   }
 
-  return 'yes';
+  return true;
 };
 
 const round = () => {
   const question = getRandom(2, 100);
 
-  return [question, isPrime(question)];
+  return [question, isPrime(question) ? 'yes' : 'no'];
 };
 
 export default () => {
